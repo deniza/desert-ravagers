@@ -1,6 +1,6 @@
 # Desert Ravagers
 
-A little game using box2d physics.
+A little game using Phaser & box2d physics.
 
 code:  deniz a. [@slimfitSuMo](https://twitter.com/slimfitSuMo)
 
