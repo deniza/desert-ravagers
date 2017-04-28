@@ -1,0 +1,41 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8" />
+	<title>Desert Ravagers</title>
+    <script type="text/javascript" src="js/gj-js-api.min.js"></script>
+    <script type="text/javascript" src="js/phaser-arcade-physics.min.js?1"></script>
+    <script type="text/javascript" src="js/box2d-plugin-full.min.js?1"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+            background-color: rgb(80,80,80);
+        }
+    </style>
+</head>
+<body>
+    
+<script type="text/javascript" src="data.json?1"></script>
+<script type="text/javascript" src="SoundPlayer.js"></script>
+<script type="text/javascript" src="boot.js"></script>
+<script type="text/javascript" src="preload.js"></script>
+<script type="text/javascript" src="intro.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript" src="mygame.js"></script>
+
+<script type="text/javascript">
+    
+    var game = new Phaser.Game(800, 600, Phaser.AUTO);    
+    
+    game.state.add("Boot", Boot);
+    game.state.add("Preload", Preload);
+    game.state.add("Intro", Intro);
+    game.state.add("Menu", Menu);
+    game.state.add("MyGame", MyGame);
+    
+    game.state.start("Boot");
+
+</script>
+
+</body>
+</html>
